@@ -42,9 +42,9 @@ if submitted:
         time.sleep(0.01)
         progress.progress(i + 1)
 
-    if collateral==0 or assets==0 or ave_daily_sales==0 or adb_checking==0 or bap==0 or other_relevant==0 or \
-            coll_ownership==0 or vb_adb==0 or score==0 or age ==0 or \
-            prin == 0 or amortamount == 0 or loanterm==0 or numberofamort==0 or paymentinternal==0:
+    if collateral==None or assets==None or ave_daily_sales==None or adb_checking==None or bap==None or other_relevant==None or \
+            coll_ownership==None or vb_adb==None or score==None or age==None or \
+            prin == None or amortamount == None or loanterm==None or numberofamort==None or paymentinternal==None:
         st.warning('Please complete the details to compute the Loan Scoring or check the details if correct')
     else:
 
