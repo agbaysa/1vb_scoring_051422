@@ -16,7 +16,7 @@ with st.form('my_form'):
     collateral = st.number_input('Enter Collateral Value (e.g. 1, 2, 3):', value= 1, key='collateral')
     assets = st.number_input('Enter Assets Value (e.g. 1, 2, 3):', value= 1, key='assets')
     ave_daily_sales = st.number_input('Enter Average Daily Sales Value (e.g. 1, 2, 3):', value= 1, key='ave_daily')
-    adb_checking = st.number_input('Enter ADV Checking/Savings Value (e.g. 1, 2, 3):', value= 1, key='adb_checking')
+    adb_checking = st.number_input('Enter ADB Checking/Savings Value (e.g. 1, 2, 3):', value= 1, key='adb_checking')
     bap = st.number_input('Enter BAP Value (e.g. 1, 2, 3):', value= 1, key='bap')
     other_relevant = st.number_input('Enter Other Relevant Sources of Income Value (e.g. 1, 2, 3):', value= 1, key='other_relevant')
     coll_ownership = st.number_input('Enter Collateral Ownership Value (e.g. 1, 2, 3):', value= 1, key='coll_ownership')
