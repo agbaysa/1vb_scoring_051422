@@ -20,7 +20,7 @@ with st.form('my_form'):
     bap = st.number_input('Enter BAP Value (e.g. 1, 2, 3):', value= 1, key='bap')
     other_relevant = st.number_input('Enter Other Relevant Sources of Income Value (e.g. 1, 2, 3):', value= 1, key='other_relevant')
     coll_ownership = st.number_input('Enter Collateral Ownership Value (e.g. 1, 2, 3):', value= 1, key='coll_ownership')
-    vb_adb = st.number_input('Enter First VAlley ADB (e.g. 1, 2, 3):', value= 1, key='vb_adb')
+    vb_adb = st.number_input('Enter First Valley ADB (e.g. 1, 2, 3):', value= 1, key='vb_adb')
     score = st.number_input('Enter Score Value (e.g. 8, 10, etc.):', value= 1, key='score')
     age = st.number_input('Enter Age Value (e.g. 35, 56):', value= 25, key='age')
     prin = st.number_input('Enter Principal Value (e.g. 50000):', value= 30000, key='prin')
@@ -78,10 +78,10 @@ if submitted:
         st.write('Loan Application Decision:')
         st.write('')
         if predict == 0:
-            st.success('The Loan Application is good. Please proceed with the booking of the loan.')
+            st.success('The Loan Application is APPROVED. Please proceed with the booking of the loan.')
             st.balloons()
             st.warning('Please encode new details above if doing another loan scoring evaluation and click Get Application Rating button')
 
         else:
-            st.warning('Please review the Loan Application further as.')
+            st.warning('Loan Application is DECLINED. Please review the Loan Application further.')
             st.warning('Please encode new details above if doing another loan scoring evaluation and click Get Application Rating button')
